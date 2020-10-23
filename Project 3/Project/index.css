@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  width: 100%;
+  /* box-shadow: 0 1px 2px 1px rgba(107, 101, 95, 0.2); */
+  border-bottom: 1px solid rgba(107, 101, 95, 0.2);
+}
+
+nav {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+.left-nav img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.left-nav input {
+  height: 30px;
+  width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+}
+
+.right-nav {
+  display: flex;
+}
+
+.right-nav .account-container {
+  display: flex;
+  align-items: center;
+  color: #9d9d9d;
+  font-size: 20px;
+}
+
+.right-nav .account-container p {
+  margin: 0 50px 0 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.right-nav img {
+  cursor: pointer;
+}
+
+.main {
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.main h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.sub-nav {
+  width: 100%;
+  background: #f2f2f2;
+  border-top: 1px solid rgba(107, 101, 95, 0.2);
+}
+
+.sub-nav-container {
+  width: 100%;
+  max-width: 1100px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.sub-nav-item {
+  color: #9d9d9d;
+  font-size: 18px;
+}
+
+.sub-nav-item:last-child {
+  border-right: 1px solid rgba(107, 101, 95, 0.2);
+}
+
+/* All of this could be used */
+
+.order-card {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 1px rgba(107, 101, 95, 0.2);
+  margin-bottom: 24px;
+}
+
+.order-card .card-top {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.order-card .card-top img {
+  width: 50px;
+  height: 50px;
+}
+
+.order-card .card-top .merchant {
+  width: 100%;
+  margin-left: 15px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.merchant h2 {
+  font-size: 20px;
+}
+
+.merchant p {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.card-top .date {
+  flex-shrink: 0;
+  align-self: flex-end;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.card-bottom {
+  display: flex;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+.status-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.status-bar .status-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.status-bar .status {
+  width: 100%;
+}
+
+.status-bar .price {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.item-area {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.item-area .item-details {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+}
+
+.item-area .item-details h3 {
+  font-size: 18px;
+}
+
+.item-area .item-details p {
+  font-weight: 300;
+}
+
+.item-area .item-details p span {
+  font-weight: 400;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.item-area .price {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-right {
+  width: 34%;
+  height: 400px;
+  padding: 6px 24px;
+}
+
+.card-right h3 {
+  margin: 18px 0 6px;
+}
+
+.card-right p {
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 3px;
+}
+
+.card-right .billing {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-right .billing img {
+  margin-right: 10px;
+}
+
+button {
+  background: white;
+  outline: none;
+  padding: 15px 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ---------------- YOUR EXERCISE BEGINS BELOW THIS LINE ---------------- */
+/* ---------------- DO NOT WRITE ANY CODE ABOVE THIS LINE ---------------- */
+/* 
+  Step 1: 
+  For the first part of the exercise, select all of the items of the class 
+  "sub-nav-item" (line 30-37 index.html). Give them a border as it appears in 
+  the Guide Screenshot. The border should be 1px wide and this color: rgba(107, 101, 95, 0.2)
+  Then, give them the proper spacing according to the Guide Screenshot.
+*/
+.sub-nav-item {
+  border: 1px solid rgba(107, 101, 95, 0.2);
+  padding: 10px 30px;
+}
+/* 
+  Step 2: 
+  Fix the spacing for the top of the order card, the status bar, and the 
+  item area. Select each of those elements separately. 
+*/
+.order-card {
+  /* border: 2px solid purple; */
+}
+.card-right {
+  border: 1px solid rgba(0, 0, 0, 0.14)
+}
+.status-bar {
+
+padding: 12px 15px 12px 20px;
+}
+.item-area {
+  padding: 30px 20px 50px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.14)
+}
+.card-top {
+/* border: 2px solid green; */
+padding: 15px
+}
+/* 
+  Step 3: 
+  Add the correct borders to the interior of the order card. Note: the border 
+  should ONLY be 1px wide in all places. Use this value as the color: rgba(0, 0, 0, 0.14)
+*/
+
+/* 
+  Step 4: 
+  Using a more specific selector, change the background color of the following element to #52b382
+  To study the element more closely, you can find it on line 55 of index.html
+*/
+
+/* DO NOT CHANGE THE FOLLOWING CODE: */
+div .status-bar div {
+  background: red;
+}
+
+/* Write your code on the next line: */
+ .status-bar .status-icon {
+  background: #52b382;
+}
+
+.sub-nav-item:hover{
+  background: gray;
+  color: whitesmoke;
+}
